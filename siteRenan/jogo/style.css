@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:wdth,wght@75..100,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+    font-weight: normal;
+}
+
+body {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background: radial-gradient(circle at 105%, #120621, #130c17, #08080d, #08080d, #08080d);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* texto da navbar */
+nav a {
+    color: #cfcfcf;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0.5rem 6px;
+    border-bottom: 1px solid transparent;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    padding: 0 6rem;
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+/*fim da navbar */
+
+
+/* cards */
+.container {
+    flex-wrap: wrap;
+    margin-top: -70px;
+    display: flex;
+    gap: 30px;
+    padding: 0 10rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 3px solid #f0f0f0;
+    border-radius: 15px;
+    width: 320px;
+    height: 325px;
+    padding: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container h1 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.container p {
+    color: #555;
+    margin-top: 10px;
+}
+
+.card:hover {
+    border-color: #8a2be2;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #8a2be2;
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.bottom:hover {
+    background-color: #cfcfcf;
+}
+
+.card h4 {
+    color: #777;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.estrela {
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    color: #ae57ff;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 3;
+}
+
+.modal .intro {
+    background-color: #8a2be2;
+}
+
+.modalconteudo {
+    background: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modalconteudo h2 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.modalconteudo a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.modalconteudo a:hover {
+    background-color: #cfcfcf;
+}
+
+.btnfechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.add-lista {
+    font-size: 40px;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    padding: 1rem;
+    position: absolute;
+    bottom: 1.2rem;
+    color: #555;
+    right: 10rem;
+    padding: 8px;
+    background-color: #08080d00;
+}
+
+.add-lista:hover {
+    color: #8a2be2;
+}
+
+/* ----------RESPONSIVIDADE---------- */
+@media (min-width: 1366px) {
+
+    nav a {
+        font-size: 20px;
+    }
+    .card {
+        width: 350px;
+    }
+}
