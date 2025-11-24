@@ -36,3 +36,19 @@ function iniciarCarrossel() {
     });
 }
 iniciarCarrossel();
+
+
+// ------ PLANOS FILTRADOS (planos de fundo) -----
+function btncell() {
+  document.querySelectorAll('.pc').forEach(e => e.classList.add("esconder"));
+  document.querySelectorAll('.cel').forEach(e => e.classList.remove("esconder"));
+}
+
+function btnpcs() {
+  document.querySelectorAll('.cel').forEach(e => e.classList.add("esconder"));
+  document.querySelectorAll('.pc').forEach(e => e.classList.remove("esconder"));
+}
+
+function btntodos() {
+  document.querySelectorAll('.pc, .cel').forEach(e => e.classList.remove("esconder"));
+}

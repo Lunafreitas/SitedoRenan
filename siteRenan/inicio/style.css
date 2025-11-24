@@ -258,7 +258,6 @@ p {
     color: white;
     border: none;
     padding: 3px 10px;
-    border-radius: 50%;
     cursor: pointer;
     font-size: 3rem;
     transition: 0.3s;
@@ -334,6 +333,19 @@ p {
     padding: 6px 12px;
     text-align: center;
     font-size: 18px;
+}
+
+.rodape {
+    gap: 100px;
+    padding: 4rem;
+    display: flex;
+    background-color: #08080d;
+}
+
+.rodape h3 {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Nunito';
 }
 
 /* ----------RESPONSIVIDADE---------- */
