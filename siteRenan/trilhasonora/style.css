@@ -15,7 +15,7 @@
     padding: 1.5rem 4rem;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background: radial-gradient(circle at 105%, #120621, #130c17, #08080d, #08080d, #08080d);
 }
 
@@ -153,7 +153,7 @@ button:hover {
 }
 
 .titulo h1 {
-    margin: 90px 10rem 10px;
+    margin: 20px 10rem 30px;
     color: #4e4e55;
     font-family: 'Nunito';
 }
